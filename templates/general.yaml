@@ -1,0 +1,11 @@
+provider: "${provider}"
+txtPrefix: "${txt_prefix}"
+serviceAccount:
+  create: true
+  name: "${service_account}"
+policy: upsert-only
+triggerLoopOnEvent: true
+domainFilters: %{ for domain in domain_filters }
+  - "${domain}"%{ endfor }
+sources: %{ for source in sources }
+  - "${source}"%{ endfor }
