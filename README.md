@@ -28,8 +28,8 @@ dns_config = {
   domain_filters = ["example.com", "foo.bar.com"]
   provider_config = {
     "credentials" = {
-      "secretKey" = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-      "accessKey" = "ZZZZZZZZZZZZZZZZZZZZZZZZ"
+      "secretKey" = "<aws-secret-access-key>"
+      "accessKey" = "<aws-access-key-id>"
     }
     "zoneType" = "public"
     "assumeRoleArn" = "...."
@@ -44,8 +44,8 @@ dns_config = {
   domain_filters = ["nbycomp.com", "foo.bar.com"]
   provider_config = {
     "credentials" = {
-      "secretKey" = "dfth2er4tyzd3678GJKwTY+zz331122334455667"
-      "accessKey" = "AAAAAAAAAAAAAAAAAA"
+      "secretKey" = "<aws-secret-access-key>"
+      "accessKey" = "<aws-access-key-id>"
     }
     "zoneType" = "public"
   }
@@ -152,7 +152,7 @@ dns_config = {
     host = "10.1.1.1"
     port = 53
     zone = "nbycomp.com"
-    tsigSecret = "96Ah/a2g0/nLeFGK+d/0tzQcccf9hCEIy34PoXX2Qg8="
+    tsigSecret = "<tsig-secret>"
     tsigSecretAlg = "hmac-sha256"
     tsigKeyname = "externaldns-key"
     tsigAxfr = true
