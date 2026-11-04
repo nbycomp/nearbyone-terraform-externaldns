@@ -163,7 +163,7 @@ In bind, enable the following:
 
 key "externaldns-key" {
         algorithm hmac-sha256;
-        secret "96Ah/a2g0/nLeFGK+d/0tzQcccf9hCEIy34PoXX2Qg8=";
+        secret "<tsig-secret>";
 };
 
 zone "nbycomp.com" {
